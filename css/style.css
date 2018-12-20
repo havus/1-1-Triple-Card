@@ -38,22 +38,7 @@ body {
 }
 
 /*================= RESPONSIVE ===================*/
-@media only screen and (max-width: 720px) {
-	.container {
-		margin: 5% 6% 0;
-	}
-	.card-1 , .card-2 , .card-3 {
-		width: 100%;
-		position: relative;
-		margin: 0 0 20px;
-		left: 0;
-	}
-	.card-2 {
-		transform: translateX(0%);
-	}
-	
-}
-@media only screen and (min-width: 721px) and (max-width: 1080px) {
+@media only screen and (max-width: 1080px) {
 	.container {
 		margin: 5% 4% 0;
 	}
@@ -72,6 +57,21 @@ body {
 	.card-3 {
 		right: 0;
 	}
+}
+@media only screen and (max-width: 720px) {
+	.container {
+		margin: 5% 6% 0;
+	}
+	.card-1 , .card-2 , .card-3 {
+		width: 100%;
+		position: relative;
+		margin: 0 0 20px;
+		left: 0;
+	}
+	.card-2 {
+		transform: translateX(0%);
+	}
+	
 }
 /*@media (min-width: 1200px) {
 	.container {
