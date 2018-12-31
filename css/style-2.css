@@ -1,0 +1,60 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(../assets/pattern1.png);
+	background-attachment: fixed;
+}
+
+.container {
+	/* background-color: grey; */
+	width: 1300px;
+	height: 900px;
+	margin: 50px auto 0;
+	display: flex;
+	justify-content: space-between;
+	/* align-content: space-between; */
+}
+
+.card-1,
+.card-2,
+.card-3 {
+	width: 350px;
+	height: 500px;
+	background-color: rgb(81, 153, 248);
+	border-radius: 10px;
+}
+
+.card-1 {
+	margin-left: 20px;
+}
+
+.card-3 {
+	margin-right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 768px;
+		display: inline-block;
+	}
+
+	.card-1,
+	.card-2,
+	.card-3 {
+		width: 300px;
+	}
+
+	/* 768 - 600 = 168 // 168 / 3 = 56 // 168 / 4 = 42 // inline - px per content*/
+	.card-1,
+	.card-2 {
+		display: inline-block;
+		overflow: hidden;
+		box-sizing: content-box;
+		margin: 0 40px;
+	}
+	
+	.card-3 {
+		display: block;
+		margin: 50px 40px;
+	}
+}
